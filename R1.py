@@ -16,6 +16,8 @@ def gerer_client(conn, client_name):
             for name, c in clients.items():
                 if name != client_name:
                     c.send(f"{client_name}: {msg}".encode('utf-8'))
+            if msg.lower() == "arret":
+                conn.close()
 
         except:
             break
@@ -25,9 +27,9 @@ def gerer_client(conn, client_name):
 
 # Création du serveur
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(('localhost', 5000))
+s.bind(('0.0.0.0', 5000))
 s.listen(5)
-print("Serveur démarré sur localhost:5000")
+print("Serveur démarré sur 0.0.0.0:5000")
 
 while True:
     conn, addr = s.accept()

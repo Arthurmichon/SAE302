@@ -2,8 +2,8 @@ import socket
 import threading
 import time
 
-HOST = 'localhost'
-PORT = 5000
+HOST = '10.49.232.96'
+PORT = 2000
 client_name = input("Entrez votre nom ou IP simulée : ")
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
