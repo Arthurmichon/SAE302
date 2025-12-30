@@ -1,2 +1,2 @@
-Lien de la vidéo (normalment on va vous demandez un mail. Indiquez votre mail uha : frederic.rouhin@uha.fr):
+Lien de la vidéo:
 https://youtu.be/reJlTLzVuFQ
